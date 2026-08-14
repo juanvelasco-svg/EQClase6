@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UPCH - Elementos de Química | Clase 6: Polaridad y Fuerzas Intermoleculares</title>
+    <title>Elementos de Química | Clase 6: Polaridad y Fuerzas Intermoleculares</title>
     <style>
         /* ===== VARIABLES Y RESET ===== */
         :root {
-            --upch-gold: #E8B800;
-            --upch-dark: #0B2A3A;
-            --upch-blue: #1A4A5A;
-            --upch-light: #2A6A7A;
+            --eq-gold: #E8B800;
+            --eq-dark: #0B2A3A;
+            --eq-blue: #1A4A5A;
+            --eq-light: #2A6A7A;
             --accent: #E94560;
             --text: #1e3c4a;
             --white: #ffffff;
@@ -33,23 +33,23 @@
 
         /* ===== HEADER ===== */
         header {
-            background: linear-gradient(135deg, var(--upch-dark) 0%, var(--upch-light) 100%);
+            background: linear-gradient(135deg, var(--eq-dark) 0%, var(--eq-light) 100%);
             color: var(--white);
             padding: 2rem 1.5rem;
             text-align: center;
             box-shadow: 0 6px 20px var(--shadow);
-            border-bottom: 5px solid var(--upch-gold);
+            border-bottom: 5px solid var(--eq-gold);
         }
 
         .logo-container {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 2rem;
             flex-wrap: wrap;
             margin-bottom: 0.5rem;
         }
-        .logo-upch {
+        .logo-EQ {
             width: 120px;
             height: auto;
             background: var(--white);
@@ -61,7 +61,7 @@
             font-size: 2.5rem;
             margin-bottom: 0.2rem;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-            color: var(--upch-gold);
+            color: var(--eq-gold);
         }
         .subtitle {
             font-size: 1.2rem;
@@ -71,7 +71,7 @@
 
         /* ===== NAV ===== */
         .nav-container {
-            background: var(--upch-dark);
+            background: var(--eq-dark);
             padding: 0.8rem 1rem;
             position: sticky;
             top: 0;
@@ -88,7 +88,7 @@
         }
         .nav-btn {
             background: var(--white);
-            color: var(--upch-dark);
+            color: var(--eq-dark);
             border: none;
             padding: 0.6rem 1.2rem;
             border-radius: 25px;
@@ -100,8 +100,8 @@
         }
         .nav-btn:hover,
         .nav-btn.active {
-            background: var(--upch-gold);
-            color: var(--upch-dark);
+            background: var(--eq-gold);
+            color: var(--eq-dark);
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
         }
@@ -138,7 +138,7 @@
             padding: 2rem;
             margin-bottom: 2rem;
             box-shadow: 0 8px 24px var(--shadow);
-            border-left: 6px solid var(--upch-gold);
+            border-left: 6px solid var(--eq-gold);
             transition: transform 0.3s ease;
         }
         .card:hover {
@@ -146,17 +146,17 @@
         }
 
         h2 {
-            color: var(--upch-blue);
+            color: var(--eq-blue);
             margin-bottom: 1.5rem;
             padding-bottom: 0.8rem;
-            border-bottom: 3px solid var(--upch-gold);
+            border-bottom: 3px solid var(--eq-gold);
             display: flex;
             align-items: center;
             gap: 0.8rem;
             font-size: 2rem;
         }
         h3 {
-            color: var(--upch-light);
+            color: var(--eq-light);
             margin: 1.5rem 0 1rem;
             font-size: 1.5rem;
         }
@@ -213,7 +213,7 @@
             min-width: 500px;
         }
         th {
-            background: linear-gradient(135deg, var(--upch-blue), var(--upch-light));
+            background: linear-gradient(135deg, var(--eq-blue), var(--eq-light));
             color: var(--white);
             padding: 1rem 1.2rem;
             text-align: left;
@@ -244,8 +244,8 @@
             transition: all 0.3s;
         }
         .tab.active {
-            background: var(--upch-gold);
-            color: var(--upch-dark);
+            background: var(--eq-gold);
+            color: var(--eq-dark);
         }
         .tab-content {
             display: none;
@@ -258,13 +258,13 @@
         /* ===== CALCULADORAS ===== */
         .calculator {
             background: linear-gradient(135deg, #fff9f5 0%, #fff0e8 100%);
-            border: 3px solid var(--upch-gold);
+            border: 3px solid var(--eq-gold);
             border-radius: 16px;
             padding: 2rem;
             margin: 2rem 0;
         }
         .calc-title {
-            color: var(--upch-blue);
+            color: var(--eq-blue);
             font-size: 1.6rem;
             margin-bottom: 1.5rem;
             display: flex;
@@ -291,10 +291,10 @@
         .calc-input-group input:focus,
         .calc-input-group select:focus {
             outline: none;
-            border-color: var(--upch-gold);
+            border-color: var(--eq-gold);
         }
         .calc-button {
-            background: var(--upch-blue);
+            background: var(--eq-blue);
             color: var(--white);
             border: none;
             padding: 0.9rem 2rem;
@@ -307,8 +307,8 @@
             box-shadow: 0 4px 12px var(--shadow);
         }
         .calc-button:hover {
-            background: var(--upch-gold);
-            color: var(--upch-dark);
+            background: var(--eq-gold);
+            color: var(--eq-dark);
             transform: translateY(-2px);
         }
         .calc-result {
@@ -360,7 +360,7 @@
             background: #6c757d;
         }
         .fc-stat.total {
-            background: var(--upch-light);
+            background: var(--eq-light);
         }
         .fc-progress {
             height: 10px;
@@ -373,7 +373,7 @@
         .fc-progress-bar {
             height: 100%;
             width: 0;
-            background: linear-gradient(90deg, var(--upch-gold), var(--accent));
+            background: linear-gradient(90deg, var(--eq-gold), var(--accent));
             transition: width 0.4s;
         }
         .flashcard-scene {
@@ -410,14 +410,14 @@
             font-size: 1.15rem;
         }
         .fc-front {
-            background: linear-gradient(135deg, var(--upch-blue), var(--upch-light));
+            background: linear-gradient(135deg, var(--eq-blue), var(--eq-light));
             color: #fff;
-            border: 3px solid var(--upch-gold);
+            border: 3px solid var(--eq-gold);
         }
         .fc-back {
             background: linear-gradient(135deg, #fff9e6, var(--sand));
             color: var(--text);
-            border: 3px solid var(--upch-gold);
+            border: 3px solid var(--eq-gold);
             transform: rotateY(180deg);
         }
         .fc-label {
@@ -486,7 +486,7 @@
             display: none;
             padding-left: 1.6rem;
             margin-top: 0.6rem;
-            border-left: 3px solid var(--upch-gold);
+            border-left: 3px solid var(--eq-gold);
         }
         .map-tree li.open>ul {
             display: block;
@@ -497,7 +497,7 @@
         }
         .map-node {
             display: inline-block;
-            background: var(--upch-blue);
+            background: var(--eq-blue);
             color: #fff;
             padding: 0.6rem 1.1rem;
             border-radius: 10px;
@@ -506,8 +506,8 @@
             transition: all 0.3s;
         }
         .map-node:hover {
-            background: var(--upch-gold);
-            color: var(--upch-dark);
+            background: var(--eq-gold);
+            color: var(--eq-dark);
             transform: translateX(4px);
         }
         .map-node.root {
@@ -515,7 +515,7 @@
             font-size: 1.15rem;
         }
         .map-node.branch {
-            background: var(--upch-light);
+            background: var(--eq-light);
         }
         .map-leaf {
             display: inline-block;
@@ -524,7 +524,7 @@
             padding: 0.45rem 0.9rem;
             border-radius: 8px;
             font-size: 0.95rem;
-            border: 2px solid var(--upch-gold);
+            border: 2px solid var(--eq-gold);
         }
         li.has-children>.map-node::before {
             content: '▶ ';
@@ -538,7 +538,7 @@
         /* ===== GLOSARIO ===== */
         .glossary-term {
             background: var(--white);
-            border: 2px solid var(--upch-gold);
+            border: 2px solid var(--eq-gold);
             border-radius: 8px;
             padding: 1rem;
             margin: 0.8rem 0;
@@ -553,7 +553,7 @@
             display: none;
             margin-top: 1rem;
             padding-top: 1rem;
-            border-top: 1px solid var(--upch-gold);
+            border-top: 1px solid var(--eq-gold);
         }
         .glossary-definition.show {
             display: block;
@@ -583,7 +583,7 @@
 
         /* ===== QUIZ ===== */
         .quiz-container {
-            background: linear-gradient(135deg, var(--upch-blue) 0%, var(--upch-light) 100%);
+            background: linear-gradient(135deg, var(--eq-blue) 0%, var(--eq-light) 100%);
             color: var(--white);
             border-radius: 16px;
             padding: 2rem;
@@ -610,7 +610,7 @@
             font-weight: 500;
         }
         .quiz-option:hover {
-            border-color: var(--upch-gold);
+            border-color: var(--eq-gold);
             transform: translateY(-3px);
         }
         .quiz-option.correct {
@@ -648,12 +648,12 @@
 
         /* ===== FOOTER ===== */
         .footer {
-            background: var(--upch-dark);
+            background: var(--eq-dark);
             color: var(--white);
             text-align: center;
             padding: 2.5rem 1.5rem;
             margin-top: 3rem;
-            border-top: 5px solid var(--upch-gold);
+            border-top: 5px solid var(--eq-gold);
         }
 
         /* ===== RESPONSIVE ===== */
@@ -671,7 +671,7 @@
                 flex-direction: column;
                 gap: 1rem;
             }
-            .logo-upch {
+            .logo-EQ {
                 width: 80px;
             }
             .container {
@@ -804,11 +804,11 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo-upch.png" alt="Logo UPCH" class="logo-upch" />
+            <img src="Logo-EQ.png" alt="Logo EQ" class="logo-EQ" />
             <div>
-                <h1>Universidad Peruana Cayetano Heredia</h1>
-                <p class="subtitle">Unidad de Formación Básica Integral - UFBI</p>
-                <p class="subtitle">Elementos de Química · Clase 6: Polaridad y Fuerzas Intermoleculares</p>
+                <h1>Elementos de Química</h1>
+                <p class="subtitle">Comprender la materia - Cuidar la vida</p>
+                <p class="subtitle">Clase 6: Polaridad y Fuerzas Intermoleculares</p>
             </div>
         </div>
     </header>
@@ -1174,8 +1174,8 @@
             <div class="card">
                 <h2>🧠 Nemotecnias y Reglas Mnemotécnicas</h2>
 
-                <div class="mnemonic-card" style="background:linear-gradient(135deg,#f0f8ff 0%,#d4edda 100%);border:3px solid var(--upch-gold);border-radius:12px;padding:1.5rem;margin:1rem 0;">
-                    <div style="color:var(--upch-blue);font-weight:700;font-size:1.2rem;">⚡ "Polar = asimétrico, Apolar = simétrico"</div>
+                <div class="mnemonic-card" style="background:linear-gradient(135deg,#f0f8ff 0%,#d4edda 100%);border:3px solid var(--eq-gold);border-radius:12px;padding:1.5rem;margin:1rem 0;">
+                    <div style="color:var(--eq-blue);font-weight:700;font-size:1.2rem;">⚡ "Polar = asimétrico, Apolar = simétrico"</div>
                     <p>Una molécula es <strong>polar</strong> si su geometría es asimétrica (presencia de pares libres o átomos diferentes). Es <strong>apolar</strong> si es simétrica (átomos iguales, sin pares libres).</p>
                 </div>
 
@@ -1281,9 +1281,9 @@
 
                 <h3>Recursos en Línea</h3>
                 <div class="bio-box">
-                    <strong>Simulador de polaridad y fuerzas (PhET):</strong> <a href="https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_es.html" target="_blank" style="color:var(--upch-blue);">PhET - Formas moleculares</a><br>
-                    <strong>Tabla de fuerzas intermoleculares:</strong> <a href="https://www.chem.fsu.edu/chemlab/chm1046course/intermolecular.html" target="_blank" style="color:var(--upch-blue);">FSU - Intermolecular Forces</a><br>
-                    <strong>Khan Academy - Enlaces y fuerzas:</strong> <a href="https://es.khanacademy.org/science/chemistry" target="_blank" style="color:var(--upch-blue);">https://es.khanacademy.org</a>
+                    <strong>Simulador de polaridad y fuerzas (PhET):</strong> <a href="https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_es.html" target="_blank" style="color:var(--eq-blue);">PhET - Formas moleculares</a><br>
+                    <strong>Tabla de fuerzas intermoleculares:</strong> <a href="https://www.chem.fsu.edu/chemlab/chm1046course/intermolecular.html" target="_blank" style="color:var(--eq-blue);">FSU - Intermolecular Forces</a><br>
+                    <strong>Khan Academy - Enlaces y fuerzas:</strong> <a href="https://es.khanacademy.org/science/chemistry" target="_blank" style="color:var(--eq-blue);">https://es.khanacademy.org</a>
                 </div>
             </div>
         </section>
@@ -1615,7 +1615,7 @@
                     '📚 Revisa los conceptos y vuelve a intentarlo.');
                 container.innerHTML = `
                     <div class="quiz-container" style="text-align:center;">
-                        <h3 style="color:var(--upch-gold);">¡Ronda completada!</h3>
+                        <h3 style="color:var(--eq-gold);">¡Ronda completada!</h3>
                         <p style="font-size:1.5rem;">✅ ${quizAciertos} de ${total} correctas</p>
                         <p>Precisión: ${pct}%</p>
                         <p>${msg}</p>
@@ -1681,7 +1681,7 @@
         });
 
         console.log('=== IMÁGENES PNG REQUERIDAS PARA LA CLASE 6 ===');
-        console.log('1. logo-upch.png                      → Logo de la universidad (cabecera)');
+        console.log('1. logo-EQ.png                      → Logo de EQ');
         console.log('2. aplicaciones-salud-polaridad.png  → Imagen general: fármacos, ADN, membrana');
         console.log('3. polaridad-ejemplos.png            → Ejemplos de moléculas polares y apolares (H2O, CO2, NH3, CH4)');
         console.log('4. momento-dipolar.png               → Diagrama de vectores en H2O y CO2');
